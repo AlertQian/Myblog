@@ -23,7 +23,7 @@
 	    .artlist{border-bottom: 1px dashed #ddd;}
 	    .artlist:last-child{border-bottom:none;}
 	    .page{text-align: center;}
-	    .navs{position: relative;top: -42px;float: right;}
+	    .navs{position: relative;top: -42px;float: right;right: -15px;}
 
 	    .footer{padding:10px 0px;background: #fff;margin-top: 20px;border: 1px solid #ccc;}
 	    .info{padding: 5px 15px;line-height: 25px;text-align: center;}
@@ -79,12 +79,47 @@
 		    	<header class="header"> 
 		    		<h2>AlertQian的博客</h2>
 		    		<cite>海到无边天作岸，山高绝顶人为峰</cite>
-               <button type="button" class="btn btn-default navs"><span class="glyphicon glyphicon-th-list" style="font-size:15px;"></span></button>
+                    <button type="button" class="btn btn-default navs" data-toggle="collapse" data-target="#nav-categories"><span class="glyphicon glyphicon-th-list" style="font-size:15px;"></span></button>
 		    		<div class="items">
 			    	    <p>访问：1530次</p>
 			    	    <p>文章：25篇</p>
 		    	    </div>
 	    		</header>
+			    <div class="collapse" id="nav-categories">
+			    	<div class="input-group">
+						<input type="text" class="form-control">
+						<span class="input-group-addon glyphicon glyphicon-search glyp"></span>
+					</div> 
+					<br>
+					<div class="panel-group">
+						<div class="panel panel-default">
+							<div class="panel-heading" data-toggle="collapse" data-target="#new-art">
+								<h4 class="panel-title">最近文章</h4>
+							</div>
+							<div id="new-art" class="panel-collapse collapse in">
+							    <div class="list-group">
+							    	<a href="#" class="list-group-item">关于微信导航栏动态改变tabbar问题<span class="badge badge-info">442</span></a>
+							    	<a href="#" class="list-group-item">怎样学好python</a>
+							    	<a href="#" class="list-group-item">bootstrap富文本编辑器的整合</a>
+							    </div>
+							</div>
+						</div> 
+					</div>
+					<div class="panel-group">
+					    <div class="panel panel-default">
+							<div class="panel-heading" data-toggle="collapse" data-target="#art-categories">
+								<h4 class="panel-title">文章分类</h4>
+							</div>
+							<div id="art-categories" class="panel-collapse collapse in">
+							    <div class="list-group">
+							    	<a href="#" class="list-group-item">技术<span class="badge badge-info">10</span></a>
+							    	<a href="#" class="list-group-item">杂文</a>
+							    	<a href="#" class="list-group-item">其他</a>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>	
 		    </div>
 		    <div class="col-md-8 content">
 		      <div class="artlist"> 
